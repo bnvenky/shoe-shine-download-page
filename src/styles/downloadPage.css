@@ -1,0 +1,114 @@
+
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.download-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar-custom {
+  background-color: #343a40;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+
+.custom-card {
+  height: 100%;
+  background-color: #f8f9fa; /* Example background color for the cards */
+  transition: background-color 0.3s ease;
+}
+
+.custom-card:hover {
+  background-color: #e9ecef; /* Change to a slightly different color on hover */
+}
+
+.page-container {
+  background-color: #f0f0f0; /* Change this to your desired background color */
+}
+
+.container {
+  padding: 20px;
+}
+
+.section-title {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 15px; /* Space between cards */
+  min-width: 250px; /* Set a minimum width for the card */
+  vertical-align: top;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
