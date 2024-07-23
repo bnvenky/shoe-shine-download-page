@@ -1,20 +1,91 @@
 
+.page-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
-.carousel-item img {
-  height: 400px;
+.service-about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-block {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-block:hover {
+  transform: translateY(-10px);
+}
+
+.text-block h4 {
+  margin-bottom: 15px;
+}
+
+.text-block p {
+  margin-bottom: 0;
+}
+
+.image-slider img {
+  max-width: 100%;
+  max-height: 300px;
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .text-content, .image-content {
+    flex: 1 1 100%;
+  }
+
+  .image-slider img {
+    max-height: 200px;
+  }
+}
+
+
+
 .download-button {
-  padding: 12px 24px;
-  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #000; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .download-button:hover {
-  transform: scale(1.05);
+  background-color: #333; /* Change to your desired hover color */
+  transform: translateY(-2px);
 }
+
+.download-icon {
+  fill: #fff; /* Change to your desired icon color */
+  font-size: 20px;
+}
+
+
+
 
 .product-card {
   transition: all 0.3s ease;
@@ -55,8 +126,10 @@
   background-color: #e9ecef; /* Change to a slightly different color on hover */
 }
 
+
 .page-container {
-  background-color: #f0f0f0; /* Change this to your desired background color */
+  background-color: #f0f0f0; /* Adjust the background color as needed */
+  
 }
 
 .container {
@@ -68,47 +141,34 @@
   margin-bottom: 30px;
 }
 
-.carousel-container {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px 0;
-}
-
-.carousel {
-  display: flex;
-  align-items: flex-start;
-}
-
-.card {
-  display: inline-block;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.carousel-container-product {
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  margin-right: 15px; /* Space between cards */
-  min-width: 250px; /* Set a minimum width for the card */
-  vertical-align: top;
-}
-
-.card-img-top {
   width: 100%;
-  height: 200px;
+  position: relative;
+}
+
+.carousel-product {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.product-image {
+  min-width: 250px; /* Set a minimum width for the image */
+  margin: 0 10px; /* Adjust margin between images */
+  height: 200px; /* Set a height for the image */
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
-.card-body {
-  padding: 15px;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
-.product-card:hover {
+.product-image:hover {
   transform: translateY(-10px);
 }
