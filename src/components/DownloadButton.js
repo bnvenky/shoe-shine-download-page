@@ -11,7 +11,7 @@ const DownloadButton = () => {
   return (
     <Zoom>
       <div className="text-center">
-        <button className="btn btn-primary download-button" onClick={handleDownload}>
+        <button className="download-button" onClick={handleDownload}>
           <FaDownload className="download-icon" /> Download on the App Store
         </button>
       </div>
