@@ -17,7 +17,7 @@ const CustomNavbar = () => {
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#products">Products</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
-          <Button href="#contact">Reach Us</Button>
+          <Button href="#reachus">Reach Us</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
