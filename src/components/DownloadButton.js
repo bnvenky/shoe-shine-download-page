@@ -1,7 +1,7 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-import { FaDownload } from 'react-icons/fa';
-import '../styles/downloadPage.css';
+import './DownloadButton.css';
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const DownloadButton = () => {
   const handleDownload = () => {
@@ -12,7 +12,7 @@ const DownloadButton = () => {
     <Zoom>
       <div className="text-center">
         <button className="download-button" onClick={handleDownload}>
-          <FaDownload className="download-icon" /> Download on the App Store
+          <IoLogoGooglePlaystore className="download-icon"/> Download App
         </button>
       </div>
     </Zoom>

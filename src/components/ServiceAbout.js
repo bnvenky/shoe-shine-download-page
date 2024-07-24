@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import '../styles/downloadPage.css';
+import './ServiceAbout.css';
+
+
 
 const images = [
   'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg',
@@ -20,8 +22,17 @@ const ServiceAbout = () => {
   }, []);
 
   return (
-    <div className="container service-about">
+    
+    
+    <div className="fluid-container service-about p-5 bg-light">
       <div className="row">
+      <div className="col-md-6 image-content">
+          <Fade bottom>
+            <div className="image-slider">
+              <img src={images[currentImage]} alt="Sliding" className="img-fluid" />
+            </div>
+          </Fade>
+        </div>
         <div className="col-md-6 text-content">
           <Fade bottom>
             <div className="text-block">
@@ -39,16 +50,12 @@ const ServiceAbout = () => {
               </p>
             </div>
           </Fade>
+          
         </div>
-        <div className="col-md-6 image-content">
-          <Fade bottom>
-            <div className="image-slider">
-              <img src={images[currentImage]} alt="Sliding" className="img-fluid" />
-            </div>
-          </Fade>
-        </div>
+        
       </div>
     </div>
+  
   );
 };
 
