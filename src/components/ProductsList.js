@@ -13,9 +13,9 @@ const products = [
 
 const ProductsList = () => {
   return (
-    <div className="fluid-container product-container pb-4">
+    <div className="fluid-container product-container  pb-4">
       <Slide bottom>
-        <div className='p-5'>
+        <div className="p-5">
         <h4 className="section-title">Our Products</h4>
         </div>
         
