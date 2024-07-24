@@ -1,0 +1,27 @@
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #000; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    border: none;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .download-button:hover {
+    background-color: #333; /* Change to your desired hover color */
+    transform: translateY(-2px);
+  }
+  
+  .download-icon {
+    fill: #fff; /* Change to your desired icon color */
+    font-size: 40px;
+  }
