@@ -1,49 +1,49 @@
 .chart-intro-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    background-size: cover;
-  }
-  
-  .text-content {
-    max-width: 50%;
-  }
-  
-  .text-content h6 {
-    color: #ff4560;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .text-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .text-content p {
-    font-size: 18px;
-    color: #6c757d;
-    margin-bottom: 30px;
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .button-container img {
-    width: 150px;
-    cursor: pointer;
-  }
-  
-  .image-content {
-    max-width: 50%;
-  }
-  
-  .image-content img {
-    width: 100%;
-    height: auto;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  background-size: cover;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h6 {
+  color: #ff4560;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.image-content {
+  max-width: 50%;
+}
+
+.image-content .carousel-item img {
+  width: 100%;
+  height: 300px; /* Set the height to ensure all images are the same size */
+  object-fit: cover; /* Ensure the images cover the area without distortion */
+}
