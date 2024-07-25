@@ -9,13 +9,13 @@ const IntroComponent = () => {
       <Row className="align-items-center">
         <Col md={6} className="text-content">
           <h6>
-            APEXCHARTS.JS
+            Let's Go
           </h6>
           <h1>
             Shoe Shine
           </h1>
           <p>
-            Charts is an open-source modern charting library that helps developers to create beautiful and interactive visualizations for web pages.
+          At Shoe Shine, we provide top-notch shoe care services to keep your footwear looking new and polished. From cleaning and polishing to repairs and customizations, we handle it all with the utmost care and professionalism.
           </p>
           <div className="button-container">
             <DownloadButton />

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Navbar.css';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
 
 const CustomNavbar = () => {
   return (
@@ -16,8 +16,7 @@ const CustomNavbar = () => {
           <Nav.Link href="#services">Services</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#products">Products</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-          <Button href="#reachus">Reach Us</Button>
+          <Nav.Link href="#contact">ContactUs</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

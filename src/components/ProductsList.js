@@ -3,12 +3,14 @@ import Slide from 'react-reveal/Slide';
 import './ProductsList.css';
 
 const products = [
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
-  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885375/close-up-futuristic-sneakers_23-2151005740_zykb7c.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885374/close-up-futuristic-sneakers_23-2151005666_umjlh3.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885374/close-up-futuristic-sneakers-presentation_23-2151005714_qva4cy.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885375/close-up-futuristic-sneakers_23-2151005732_okqdqr.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885374/close-up-futuristic-sneakers-showcase_23-2151005686_s8nbtl.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885374/men-shoes_1203-8440_z9ppfw.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885374/view-soccer-shoes_23-2150887400_kyuvzp.avif' },
+  { name: 'Product name', image: 'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721885375/gym-composition-with-sport-elements_23-2147915643_y9hpzr.avif' },
 ];
 
 const ProductsList = () => {

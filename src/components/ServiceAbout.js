@@ -5,10 +5,10 @@ import './ServiceAbout.css';
 
 
 const images = [
-  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg',
-  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1715775194/beautiful-gift-voucher-with-decoration_23-2149243913_dv3w0l.jpg',
-  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg',
-  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1720083323/240_F_701399184_3Y4KG1r01CjNuJ7tI5IU2Friq7u0EqKs_oqojb8.jpg'
+  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721887539/male-shoes-wooden-background_1016228-25503_tr1pbz.jpg',
+  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721887543/mature-shoemaker-workshop-making-shoes_171337-12261_nw8j2i.avif',
+  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721887540/concentrated-shoemaker-workshop-making-shoes_171337-12293_mnpfy7.avif',
+  'https://res.cloudinary.com/dhik9tnvf/image/upload/v1721887544/mature-shoemaker-workshop-making-shoes_171337-12240_dun3dv.avif'
 ];
 
 const ServiceAbout = () => {
