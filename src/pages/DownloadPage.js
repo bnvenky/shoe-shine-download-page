@@ -6,6 +6,7 @@ import IntroComponent from '../components/IntroComponent';
 import '../styles/downloadPage.css';
 import ContactUs from '../components/ContactUs';
 
+
 const DownloadPage = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const DownloadPage = () => {
         <ServiceAbout />
         <ProductsList />
         <ContactUs />
+       
       </div>
     
     </>

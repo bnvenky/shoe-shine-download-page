@@ -15,18 +15,17 @@ const products = [
 
 const ProductsList = () => {
   return (
-    <div className="fluid-container product-container  pb-4">
+    <div className="fluid-container product-container pb-4">
       <Slide bottom>
         <div className="p-5">
-        <h4 className="section-title">Our Products</h4>
+          <h4 className="section-title">Our Products</h4>
         </div>
-        
       </Slide>
-      <div className="carousel-container-product">
-        <div className="carousel-product">
-          {products.map((product, index) => (
+      <div className="carousel-container-products">
+        <div className="carousel-products">
+          {products.concat(products).map((product, index) => (
             <Slide bottom delay={index * 200} key={index}>
-              <img src={product.image} className="product-image" alt={product.name} />
+              <img src={product.image} className="products-image" alt={product.name} />
             </Slide>
           ))}
         </div>

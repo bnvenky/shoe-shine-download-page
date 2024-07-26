@@ -1,41 +1,26 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactUs.css';
 
 const ContactUs = () => {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-    });
+    const form = useRef();
 
-    const [responseMessage, setResponseMessage] = useState('');
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/send', formData)
-            .then((response) => {
-                setResponseMessage('Form submitted successfully!');
-                setFormData({
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    phone: '',
-                    message: ''
-                });
-            })
-            .catch((error) => {
-                setResponseMessage('Error submitting form. Please try again.');
-            });
+
+        emailjs
+            .sendForm('service_spd3y44', 'template_ebb3fq8', form.current, 'ckVWmgUefAt8SEZCK')
+            .then(
+                () => {
+                    alert('Email sent successfully!');
+                    form.current.reset();
+                },
+                (error) => {
+                    alert('Failed to send email. Please try again.');
+                    form.current.reset();
+                }
+            );
     };
 
     return (
@@ -48,61 +33,48 @@ const ContactUs = () => {
                 </p>
             </div>
             <div className="contact-form">
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <div className="form-group flex">
                         <input
                             type="text"
-                            id="firstName"
-                            name="firstName"
+                            name="from_firstname"
                             placeholder="First name*"
-                            value={formData.firstName}
-                            onChange={handleChange}
                             required
+                            className='m-1'
                         />
                         <input
                             type="text"
-                            id="lastName"
-                            name="lastName"
+                            name="from_lastname"
                             placeholder="Last name"
-                            value={formData.lastName}
-                            onChange={handleChange}
+                            className='m-1'
+                            required
                         />
                     </div>
                     <div className="form-group">
                         <input
                             type="email"
-                            id="email"
-                            name="email"
+                            name="from_email"
                             placeholder="Email*"
-                            value={formData.email}
-                            onChange={handleChange}
                             required
                         />
                     </div>
                     <div className="form-group">
                         <input
                             type="tel"
-                            id="phone"
-                            name="phone"
+                            name="from_phone"
                             placeholder="Phone"
-                            value={formData.phone}
-                            onChange={handleChange}
                             required
                         />
                     </div>
                     <div className="form-group">
                         <textarea
-                            id="message"
                             name="message"
                             placeholder="What can we help you with?"
-                            value={formData.message}
-                            onChange={handleChange}
                             required
                         ></textarea>
                     </div>
                     <button type="submit" className="submit-btn">Submit</button>
                 </form>
-                {responseMessage && <p className="response-message">{responseMessage}</p>}
             </div>
         </div>
     );
