@@ -26,14 +26,14 @@ const ServiceAbout = () => {
     
     <div className="fluid-container service-about p-5 bg-light">
       <div className="row">
-      <div className="col-md-6 image-content">
+      <div className="col-md-6 image-content order-2 order-md-1">
           <Fade bottom>
             <div className="image-slider">
               <img src={images[currentImage]} alt="Sliding" className="img-fluid" />
             </div>
           </Fade>
         </div>
-        <div className="col-md-6 text-content">
+        <div className="col-md-6 text-content order-1 order-md-2">
           <Fade bottom>
             <div className="text-block">
               <h4>Our Service</h4>

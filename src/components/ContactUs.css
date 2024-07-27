@@ -1,5 +1,6 @@
 .contact-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
@@ -34,17 +35,13 @@
 }
 
 .form-group {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 15px;
-    padding: 10px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
